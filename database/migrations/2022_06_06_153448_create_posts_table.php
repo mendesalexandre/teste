@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('title');
             $table->date('post_date')->default(Carbon::now());
             $table->longText('content');
+            $table->string('status')->default('PUBLISHED');
             $table->timestamps();
         });
     }
